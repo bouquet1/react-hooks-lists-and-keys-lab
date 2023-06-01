@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectItem({ name, about, technologies }) {
   console.log(technologies);
-  const technologiesSpan = technologies.map((technology) => <span technologies={technology.technologies}></span>);
+  const technologiesSpan = technologies.map((technology, index) => <span technology={technology.index}></span>);
 
   return (
     <div className="project-item">
